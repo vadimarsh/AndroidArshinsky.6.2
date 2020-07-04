@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:text="@string/_0"
+        android:textAlignment="textEnd"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/spespan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/oppan"
+        app:layout_constraintStart_toStartOf="@+id/butpan"
+        app:layout_constraintTop_toBottomOf="@+id/textview">
+
+
+        <include
+            android:id="@+id/buttonreset"
+            layout="@layout/button_d"
+            android:text="@string/_reset" />
+
+        <include
+            android:id="@+id/buttonsign"
+            layout="@layout/button_d"
+            android:text="@string/_sign" />
+
+        <include
+            android:id="@+id/buttonproc"
+            layout="@layout/button_d"
+            android:text="@string/_proc" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/butpan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/oppan"
+        app:layout_constraintEnd_toStartOf="@+id/oppan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spespan"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <include
+                android:id="@+id/button7"
+                layout="@layout/button_d"
+                android:text="@string/_7" />
+
+            <include
+                android:id="@+id/button8"
+                layout="@layout/button_d"
+                android:text="@string/_8" />
+
+            <include
+                android:id="@+id/button9"
+                layout="@layout/button_d"
+                android:text="@string/_9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/button4"
+                layout="@layout/button_d"
+                android:text="@string/_4" />
+
+            <include
+                android:id="@+id/button5"
+                layout="@layout/button_d"
+                android:text="@string/_5" />
+
+            <include
+                android:id="@+id/button6"
+                layout="@layout/button_d"
+                android:text="@string/_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/button3"
+                layout="@layout/button_d"
+                android:text="@string/_1" />
+
+            <include
+                android:id="@+id/button2"
+                layout="@layout/button_d"
+                android:text="@string/_2" />
+
+            <include
+                android:id="@+id/button1"
+                layout="@layout/button_d"
+                android:text="@string/_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/button0"
+                layout="@layout/button_d"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <include
+                android:id="@+id/buttonDot"
+                layout="@layout/button_d"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_dot" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/oppan"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview">
+
+        <include
+            android:id="@+id/buttondiv"
+            layout="@layout/button_d"
+            android:text="@string/_div" />
+
+        <include
+            android:id="@+id/buttonmult"
+            layout="@layout/button_d"
+            android:text="@string/_mult" />
+
+        <include
+            android:id="@+id/buttonminus"
+            layout="@layout/button_d"
+            android:text="@string/_minus" />
+
+        <include
+            android:id="@+id/buttonplus"
+            layout="@layout/button_d"
+            android:text="@string/_plus" />
+
+        <include
+            android:id="@+id/buttoneval"
+            layout="@layout/button_d"
+            android:text="@string/_eval" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
